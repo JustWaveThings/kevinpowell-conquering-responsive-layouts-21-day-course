@@ -7,4 +7,4 @@ Instead of 21 different repos, I've decided to create folders for each day in th
 
 ### Overview of course:
 - Day 1: Using Percentages vs. Fixed widths
-  - Recap: 
+  - Summary: 
