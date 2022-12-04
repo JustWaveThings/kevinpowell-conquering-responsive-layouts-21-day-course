@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&family=Satisfy&family=Special+Elite&display=swap');
+
+:root {
+  --color-VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --color-DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --color-GrayishBlue: hsl(212, 23%, 69%);
+  --color-LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+/* font-family: 'Satisfy',
+cursive;
+font-family: 'Special Elite',
+cursive; */
+
+/* body * {
+  border: 1px solid pink;
+} */
+
+header, footer, body, section, article{
+  display: flex;
+}
+
+body {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
+  justify-content: center;
+}
+
+
+body {
+  margin:0;
+  font-family: 'Rubik Microbe', cursive;
+  background-image: linear-gradient(to top right, var(--color-VeryDarkGrayishBlue), var(--color-GrayishBlue) 50%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h1 {
+  font-size: clamp(2rem,
+    6vw,
+    100vw);
+  padding: 0 5rem;
+  letter-spacing: .1em;
+  text-align: center;
+  color: var(--color-VeryDarkGrayishBlue);
+}
+
+h2 {
+  color: white;
+  margin: 0;
+  font-family: 'Satisfy',
+    cursive;
+  font-weight: 400;
+  font-size: clamp(1.5rem,
+      2vw,
+      50vw);
+  text-decoration: underline;
+}
+
+section{
+  flex-direction: column;
+  gap: clamp(1vw, 1.5rem, 2rem);
+  margin: 0 clamp(1rem, 3vw, 4rem);
+  font-family: 'Special Elite', cursive;
+}
+
+article {
+  align-items: center;
+  gap: clamp(1rem, 3vw, 4rem);
+  border-bottom: 3px solid rgba(245, 245, 245, 0.599);
+}
+.title {
+  margin-right: auto;
+}
+
+section > article:nth-child(2) ~ article {
+  background-color: red;
+  border: 1px solid pink;
+/*   display: none; */
+}
+
+footer {
+  align-self: center;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--color-LightGrayishBlue);
+}
+
+a, .attribution a {
+  font-family: 'Special Elite',
+    cursive;
+  color: white;
+  text-decoration: none;
+}
+
+.gh-logo {
+  flex-shrink: 0;
+}
