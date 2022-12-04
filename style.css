@@ -77,8 +77,6 @@ article {
 }
 
 section > article:nth-child(3) ~ article {
-  background-color: red;
-  border: 1px solid pink;
   display: none; 
 }
 
