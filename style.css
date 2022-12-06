@@ -77,7 +77,7 @@ article {
 }
 
 section > article:nth-child(3) ~ article {
-  display: none; 
+  display: none;
 }
 
 footer {
