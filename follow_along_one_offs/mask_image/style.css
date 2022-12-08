@@ -32,7 +32,7 @@ body {
   color:var(--clr-white-semi-transparent);
   max-width: 700px;
   position: relative;
-  gap: 15em;
+
 }
 
 .hero {
@@ -60,19 +60,9 @@ body {
 }
 
 .hero-image{
-  position: absolute;
   align-self: center;
-  margin: 2em;
-  -webkit-mask-image: linear-gradient(
-    rgb(0 0 0 / 1),
-    rgb(0 0 0 / .5) 60%,
-    rgb(0 0 0 / 0)
-  ); 
-  mask-image: linear-gradient(
-    rgb(0 0 0 / 1),
-    rgb(0 0 0 / .5) 60%,
-    rgb(0 0 0 / 0)
-    );
-  object-fit: cover;
-}
+  -webkit-mask-image: url(/follow_along_one_offs/mask_image/img/topography.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 
