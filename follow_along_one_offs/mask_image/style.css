@@ -32,37 +32,20 @@ body {
   color:var(--clr-white-semi-transparent);
   max-width: 700px;
   position: relative;
+  gap: 8rem;
 
-}
-
-.hero {
-  position: relative;
 }
 
 .hero-title {
-  font-size: 4rem;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  color: var(--clr-white-solid);
-  padding: 0 3em;
-  text-align: center;
-  position: relative;
-  z-index: 2;
+  font-size: 10rem;
+  background-image: url(/follow_along_one_offs/mask_image/img/impressionfox.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  z-index: 4;
-  position: relative;
-  
-  
 }
-
-.hero-image{
-  align-self: center;
-  -webkit-mask-image: url(/follow_along_one_offs/mask_image/img/topography.svg);
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-
