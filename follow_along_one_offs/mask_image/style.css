@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&family=Satisfy&family=Special+Elite&display=swap');
+
+
+:root {
+  --clr-dark-teal: #23424A;
+  --clr-white-solid: #FFFFFF;
+  --clr-white-semi-transparent: #FFFFFFD9;
+  --clr-aqua-accent: #38CFD9;
+  --clr-black: black;
+
+  --fw--heading-900: 900;
+  --fw--copy-400: 400;
+
+  --lh--copy: 1.75rem;
+  --ff-roboto: 'Roboto', sans-serif;
+  font-size: 16px;
+
+}
+
+* {
+  box-sizing: border-box;
+  border: solid 1px pink;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-roboto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-black);
+  color:var(--clr-white-semi-transparent);
+
+}
+
+.hero-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  align-self: center;
+  margin: 3em;
+}
