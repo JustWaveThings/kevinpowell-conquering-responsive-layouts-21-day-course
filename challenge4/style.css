@@ -1,23 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 :root {
-  --clr-dark-teal:  #23424A;
+  --clr-darker-teal:  #23424A;
   --clr-white-solid: #FFFFFF;
   --clr-white-semi-transparent: #FFFFFFD9;
   --clr-aqua-accent: #38CFD9;
+  --clr-royal-purple: #87629A;
+  --clr-dark-purple: #3A3A3A;
+  --clr-dark-teal: #136C72;
+
 
   --fw--heading-900: 900;
   --fw--copy-400: 400;
 
   --lh--copy: 1.75rem;
   --ff-roboto: 'Roboto', sans-serif;
+  
+  --fs-h1-heading:3rem;
+  --fs-copy: 1.31rem;
+  --fs-h2-heading: 2.25rem;
   font-size: 16px;
+
+  --padding-section: 5em;
 
 }
 
 * {
   box-sizing: border-box;
- 
+
 }
 
 body {
@@ -27,11 +37,16 @@ body {
 }
 
 main {
-  background-color: var(--clr-dark-teal);
   width: 100vw;
+  
 }
 
-article {
+.hero {
+  background-color: var(--clr-darker-teal);
+  padding: var(--padding-section);
+}
+
+.hero-article {
   margin: 9.25rem  7.62rem;
   width: 44%;
   display: flex;
@@ -40,7 +55,7 @@ article {
   max-width: 900px;
 }
 
-.header{
+.hero__header{
   color: var(--clr-white-solid);
   font-weight: var(--fw--heading-900);
   font-size: 2.75rem;
@@ -48,15 +63,15 @@ article {
   
 }
 
-.para {
+.hero__para {
   color: var(--clr-white-semi-transparent);
   font-weight: var(--fw--copy-400);
-  font-size: 1.25rem;
+  font-size: var(--fs-copy);
   line-height: var(--lh--copy) ;
   margin: 0;
 }
 
-.button{
+.hero__button{
   text-decoration: none;
   padding: 1.25rem 0rem;
   background-color: var(--clr-aqua-accent);
@@ -68,8 +83,47 @@ article {
   text-transform: uppercase;
 }
 
-.button:hover,
-.button:focus {
+.hero__button:hover,
+.hero__button:focus {
   filter: saturate(300%);
   transform: scale(102%);
 }
+
+.one {
+  background-color: var(--clr-white-solid);
+  
+}
+
+.benefits {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--padding-section);
+;
+
+}
+
+.benefits__title {
+  font-size: var(--fs-h2-heading);
+  font-weight: var(--fw--heading-900);
+}
+
+.benefits__copy {
+    line-height: var(--lh--copy);
+    font-size: var(--fs-copy);
+    color: 
+}
+
+.one > .benefits__container > .benefits__title {
+  color: var(--clr-royal-purple);
+}
+
+.two {
+  background-color: var(--clr-dark-teal);
+  color: var(--clr-white-solid);
+}
+
+
+
